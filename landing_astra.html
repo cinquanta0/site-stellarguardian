@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Astra Mysterium</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- 🔝 Barra superiore -->
+  <nav class="navbar">
+    <div class="logo">ASTRA MYSTERIUM</div>
+    <div class="menu-center">
+      <div class="dropdown">
+        <button class="dropdown-btn">☰ Menu</button>
+        <div class="dropdown-content">
+          <a href="" download>📱 Download APK(coming soon...)</a>
+          <a href="https://stellarguardian112.onrender.com">🌐 Full Site</a>
+          <a href="https://ukaa.itch.io/httpsastrogame135onrendercom" target="_blank">🏠 Itch.io</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Welcome, Star Traveler</h1>
+    <p>Discover the hidden power of the cosmos and challenge ancient celestial beings in our intense bullet-hell shooter.</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Astra Dev Studio</p>
+  </footer>
+<script>
+  const dropdown = document.querySelector('.dropdown');
+  const btn = dropdown.querySelector('.dropdown-btn');
+
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    dropdown.classList.toggle('active');
+  });
+
+  document.addEventListener('click', () => {
+    dropdown.classList.remove('active');
+  });
+</script>
+
+</body>
+</html>
